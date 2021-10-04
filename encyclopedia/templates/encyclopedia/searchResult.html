@@ -1,0 +1,24 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia | Search Results
+{% endblock %}
+
+{% block body %}
+    <div class="search-page">
+        <h2 class="search-h1">Search Results</h2>
+        <hr>
+
+        <ul class="unordered">
+            {% for result in results %}
+                <li class="entry-list">
+                    <div>
+                        <h5><a class="entry-link" href="{% url 'display' title=result %}">{{ result }}</a></h5>
+                        <p>Click <a href="{% url 'display' title=result %}">here</a> to read about it and gain more knowledge</p>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+{% endblock %}

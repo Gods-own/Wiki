@@ -1,0 +1,1 @@
+#EdxEdx is an online learning platform for *students*, *graduates* or anyone seeking to gain more knowledge.It was founded in May 2012 by scientists from MIT and Harvard.
